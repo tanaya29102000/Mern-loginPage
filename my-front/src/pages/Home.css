@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #5d1313; Adjust as needed */
+}
+
+.navbar-image img {
+  max-width: 100%; /* Ensure the image scales within its container */
+  height: auto;
+}
+
+.main-content {
+  flex: 1; /* Allows main content to grow and fill available space */
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3uC5ot0uMZYuDZz2wn5VozC-PYDl6UL6yA&usqp=CAU"');  */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('/public/images\ \(2\).jpg');  */
+}
+
+.text-content {
+  text-align: center;
+  color: #333; /* Adjust color as needed */
+}
+
+.services-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1 1 30%; /* Adjust as needed for responsive design */
+  margin: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #259294; /* Dark background for the navbar */
+}
+
+.p {
+  background-color: aliceblue;
+}
+
+.navbar-title {
+  align-items: center;
+}

@@ -1,0 +1,89 @@
+
+.login {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  margin-left: 400px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.login h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+.login input[type="submit"] {
+  background-color: #6a11cb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #2575fc;
+}
+
+.login p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.login a {
+  color: #2575fc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.login a:hover {
+  color: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .login h1 {
+    font-size: 1.75rem;
+  }
+
+  .login input[type="email"],
+  .login input[type="password"],
+  .login input[type="submit"] {
+    font-size: 1rem;
+  }
+}
