@@ -1,62 +1,73 @@
-/* Global Styling */
+/* Signup.css */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Signup Form Styling */
 .login {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
 }
 
-.login h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.login input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.login input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
 }
 
-.login input[type="submit"]:hover {
-    background-color: #45a049;
+input[type="submit"] {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.login p {
-    margin: 20px 0;
-    color: #666;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-.login a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
+p {
+  color: #666;
+  font-size: 1rem;
 }
 
-.login a:hover {
-    text-decoration: underline;
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .login {
+    width: 90%;
+  }
 }

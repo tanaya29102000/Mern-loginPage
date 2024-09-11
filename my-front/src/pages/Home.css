@@ -1,5 +1,6 @@
-html,
-body {
+/* Home.css */
+
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -27,14 +28,14 @@ body {
 
 .main-content {
   flex: 1; /* Allows main content to grow and fill available space */
-  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3uC5ot0uMZYuDZz2wn5VozC-PYDl6UL6yA&usqp=CAU"');  */
+  /* background-image: url('path-to-your-background-image.jpg'); Use a valid path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url('/public/images\ \(2\).jpg');  */
+
 }
 
 .text-content {
@@ -67,12 +68,13 @@ body {
   padding: 20px;
   text-align: center;
   background-color: #259294; /* Dark background for the navbar */
+  
 }
 
-.p {
+.p{
   background-color: aliceblue;
 }
 
-.navbar-title {
+.navbar-title{
   align-items: center;
 }

@@ -1,4 +1,4 @@
-/* Basic reset for list and link styles */
+/* Reset list and links */
 .navbar ul {
   list-style: none;
   padding: 0;
@@ -7,13 +7,13 @@
 
 .navbar a {
   text-decoration: none;
-  color: #fff;
+  color: #fff; /* White text color for links */
 }
 
 /* Navbar styling */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between logo and nav links */
   align-items: center;
   background-color: #259294; /* Dark background for the navbar */
   padding: 1rem 2rem; /* Padding for spacing */
@@ -23,29 +23,34 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff; /* Logo text color */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px; /* Adjust width to fit the image */
+  height: 50px; /* Adjust height as per image size */
+  display: inline-block;
 }
 
 /* Styling for navigation links */
 .nav-links ul {
   display: flex;
-  gap: 1rem; /* Space between items */
+  gap: 1rem; /* Space between nav items */
 }
 
 .nav-links a {
-  color: #fff; /* Text color */
-  font-size: 1rem;
+  color: #fff; /* White text color */
+  font-size: 1rem; /* Standard font size */
   padding: 0.5rem 1rem; /* Padding for links */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-/* Hover effect for links */
+/* Hover effect for nav links */
 .nav-links a:hover {
-  background-color: #575757; /* Slightly lighter background on hover */
-  color: #fff; /* Text color on hover */
-  border-radius: 5px; /* Rounded corners for the hover effect */
+  background-color: #575757; /* Lighter background color on hover */
+  color: #fff; /* Text color remains white on hover */
+  border-radius: 5px; /* Rounded corners on hover */
 }
 
-/* Styling for the cart icon */
+/* Styling for icons (like the cart or wishlist icons) */
 .nav-links img {
   width: 24px;
   height: 24px;
@@ -54,23 +59,23 @@
 /* Responsive styling */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Stack the navbar vertically on smaller screens */
+    align-items: flex-start; /* Align to the left */
   }
 
   .nav-links ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack nav links vertically */
     width: 100%;
   }
 
   .nav-links li {
-    width: 100%;
+    width: 100%; /* Each link takes full width */
   }
 
   .nav-links a {
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    display: block;
+    padding: 1rem; /* More padding for better touch targets on mobile */
+    text-align: center; /* Center align the text */
+    width: 100%; /* Full width for links */
+    display: block; /* Block display for full-width clickable area */
   }
 }

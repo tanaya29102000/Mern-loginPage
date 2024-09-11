@@ -1,89 +1,91 @@
-
-.login {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 300px;
-  width: 100%;
-  margin-left: 400px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-
-.login h1 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #333;
-}
-
-.login form {
+/* Container for the login page */
+.login-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a2c2e9, #f2d774); /* Soft gradient background */
+  padding: 10px;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
+/* Styling for the login heading */
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form container styling */
+.login-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
   border-radius: 4px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
+  border: 1px solid #ddd;
+  font-size: 16px;
 }
 
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
-  border-color: #6a11cb;
-  outline: none;
-}
-
-.login input[type="submit"] {
-  background-color: #6a11cb;
-  color: white;
-  padding: 0.75rem;
+/* Submit button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.login input[type="submit"]:hover {
-  background-color: #2575fc;
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
 }
 
-.login p {
-  font-size: 1rem;
-  color: #666;
+/* Button active effect */
+button:active {
+  background-color: #003d7a;
+  transform: scale(0.98);
 }
 
-.login a {
-  color: #2575fc;
+/* Styling for Forgot Password link */
+.forgot-password-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #007bff;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 14px;
 }
 
-.login a:hover {
-  color: #6a11cb;
+.forgot-password-link:hover {
+  text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .login {
-    padding: 1.5rem;
-    width: 90%;
-  }
-
-  .login h1 {
-    font-size: 1.75rem;
-  }
-
-  .login input[type="email"],
-  .login input[type="password"],
-  .login input[type="submit"] {
-    font-size: 1rem;
-  }
+/* Styling for alternative option links */
+.login-container p {
+  color: #fff;
+  margin: 15px 0;
 }
